@@ -1,1 +1,341 @@
-/* stub — filled in Task 5 */
+/* ───────────────────────────────────────────────────────────────
+   นิทรรศการ — night-gallery aesthetic
+   walls of warm near-black, gold frames, serif plaques, spotlights
+   ─────────────────────────────────────────────────────────────── */
+
+:root {
+  --wall: #16130f;          /* gallery wall — warm near-black */
+  --wall-deep: #0d0b08;     /* beat rooms — deeper dark */
+  --bone: #ece5d8;          /* primary text — bone white */
+  --bone-dim: #b3a996;
+  --gold: #c9a24b;          /* frame + accent gold */
+  --gold-dim: #8a7137;
+  --mat: #efe9dc;           /* frame mat board */
+  --serif: "Trirong", "Pridi", serif;
+  --prose: "Pridi", serif;
+  --ui: "IBM Plex Sans Thai", sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--wall-deep);
+  color: var(--bone);
+  font-family: var(--ui);
+  line-height: 1.7;
+  padding: 0 0.6rem; /* mobile gutter — body bg visible beside #app */
+}
+
+/* #app gets its own bg, distinct from body (ui-main-bgcolor-distinct) */
+#app {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  background:
+    radial-gradient(1200px 500px at 50% -5%, rgba(201, 162, 75, 0.07), transparent 60%),
+    repeating-linear-gradient(90deg, transparent 0 118px, rgba(255, 255, 255, 0.012) 118px 120px),
+    var(--wall);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.8);
+  min-height: 100vh;
+}
+
+/* ── entrance ─────────────────────────────────────────────── */
+
+.entrance {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border-bottom: 1px solid rgba(201, 162, 75, 0.18);
+}
+
+.entrance-kicker {
+  font-family: var(--ui);
+  font-size: 0.85rem;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.entrance-title {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(3.2rem, 11vw, 6.5rem);
+  line-height: 1.15;
+  margin: 1rem 0 0.5rem;
+  color: var(--bone);
+  text-shadow: 0 0 60px rgba(201, 162, 75, 0.25);
+}
+
+.entrance-sub {
+  font-family: var(--prose);
+  font-weight: 300;
+  font-size: clamp(1rem, 2.6vw, 1.25rem);
+  color: var(--bone-dim);
+  max-width: 34em;
+}
+
+.asof {
+  margin-top: 2.2rem;
+  font-size: 0.8rem;
+  color: var(--gold-dim);
+  border: 1px solid rgba(201, 162, 75, 0.35);
+  border-radius: 999px;
+  padding: 0.35rem 1.1rem;
+}
+
+.entrance-hint {
+  margin-top: 4rem;
+  font-size: 0.8rem;
+  color: var(--bone-dim);
+  animation: bob 2.4s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(8px); opacity: 1; }
+}
+
+/* ── exhibits — framed works on the wall ──────────────────── */
+
+.exhibit {
+  display: flex;
+  padding: 7vh 1.5rem;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.exhibit.seen { opacity: 1; transform: none; }
+
+.exhibit.left { justify-content: flex-start; }
+.exhibit.right { justify-content: flex-end; }
+
+.frame {
+  width: min(560px, 100%);
+  background: linear-gradient(160deg, #d8b96a, var(--gold) 30%, #6e5a2c 90%);
+  padding: 10px;                 /* the gold frame itself */
+  border-radius: 2px;
+  box-shadow:
+    0 25px 60px -20px rgba(0, 0, 0, 0.9),
+    0 0 0 1px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+/* spotlight cast on the wall above each frame */
+.frame::before {
+  content: "";
+  position: absolute;
+  inset: -90px -60px auto;
+  height: 110px;
+  background: radial-gradient(55% 100% at 50% 100%, rgba(236, 229, 216, 0.08), transparent 75%);
+  pointer-events: none;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
+  border: 10px solid var(--mat); /* mat board */
+  background: var(--mat);
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  background:
+    radial-gradient(120% 120% at 30% 20%, rgba(255, 255, 255, 0.14), transparent 55%),
+    var(--tint, #555);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.ph-number {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+.ph-name {
+  font-family: var(--ui);
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* plaque under the art, inside the frame */
+.plaque {
+  background: var(--mat);
+  color: #2a251c;
+  padding: 1rem 1.2rem 1.15rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.plaque-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.plaque-no {
+  font-family: var(--ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: #8a7137;
+  white-space: nowrap;
+}
+
+.plaque-title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.35rem;
+  color: #1d1912;
+}
+
+.plaque-issue,
+.plaque-solves {
+  font-family: var(--prose);
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #4a4335;
+}
+
+.plaque-issue { font-style: italic; color: #6b6252; }
+
+.plaque-stats {
+  margin-top: 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #8a7137;
+}
+
+.plaque-stats.here { color: #a3472e; }
+
+.plaque-visit {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--mat);
+  background: #2a251c;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.plaque-visit:hover { background: #4a4335; }
+
+/* #52 self frame gets a warmer halo */
+.exhibit.self .frame {
+  box-shadow:
+    0 25px 60px -20px rgba(0, 0, 0, 0.9),
+    0 0 55px rgba(201, 162, 75, 0.4);
+}
+
+/* ── narrative beat rooms ─────────────────────────────────── */
+
+.beat {
+  background:
+    radial-gradient(900px 400px at 50% 10%, rgba(201, 162, 75, 0.05), transparent 65%),
+    var(--wall-deep);
+  border-top: 1px solid rgba(201, 162, 75, 0.15);
+  border-bottom: 1px solid rgba(201, 162, 75, 0.15);
+  padding: 16vh 1.5rem;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.beat.seen { opacity: 1; }
+
+.beat-inner { max-width: 620px; }
+
+.beat-title {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(1.7rem, 5vw, 2.6rem);
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+}
+
+.beat-body {
+  font-family: var(--prose);
+  font-weight: 300;
+  font-size: clamp(1rem, 2.4vw, 1.15rem);
+  color: var(--bone);
+  margin-bottom: 1em;
+}
+
+.totals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.total {
+  border: 1px solid rgba(201, 162, 75, 0.3);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.total-n {
+  display: block;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: var(--gold);
+}
+
+.total-k {
+  font-size: 0.75rem;
+  color: var(--bone-dim);
+}
+
+/* ── chrome ───────────────────────────────────────────────── */
+
+#view-toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+  font-family: var(--ui);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--wall-deep);
+  background: var(--gold);
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+#view-toggle:hover { background: #d8b96a; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .exhibit, .beat { opacity: 1; transform: none; transition: none; }
+  .entrance-hint { animation: none; }
+}
+
+@media (max-width: 720px) {
+  .exhibit.left, .exhibit.right { justify-content: center; }
+  .exhibit { padding: 5vh 0.4rem; }
+}
