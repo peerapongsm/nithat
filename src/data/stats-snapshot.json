@@ -1,0 +1,3367 @@
+{
+  "asOf": "2026-07-22T09:15:33.940Z",
+  "projects": [
+    {
+      "id": 1,
+      "name": "The Armory",
+      "slug": "armory",
+      "issue": "A year of small projects scatters with no home; progress stays invisible.",
+      "solves": "A living hub that indexes every project, its problem, and its status.",
+      "medium": "web",
+      "tags": [
+        "meta",
+        "infra"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/armory",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Hub page render + deploy on GitHub Pages",
+          "done": true
+        },
+        {
+          "title": "Umami analytics wired across all projects",
+          "done": true
+        },
+        {
+          "title": "Live search + status/track filters",
+          "done": true
+        },
+        {
+          "title": "Custom apex domain over HTTPS",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Armory Analytics",
+      "slug": "armory-analytics",
+      "issue": "No way to know which projects people actually like, so promotion is guesswork.",
+      "solves": "Analytics riding an open-source collector + a cross-project dashboard and promotion score.",
+      "medium": "web",
+      "tags": [
+        "infra",
+        "data"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://armory-analytics.peerapongsm.dev",
+      "repo": "https://github.com/peerapongsm/armory-analytics",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Data ingestion",
+          "done": true
+        },
+        {
+          "title": "Chart / viz layer",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        },
+        {
+          "title": "Unit tests",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Yai-Aree",
+      "slug": "cbt-thought-record",
+      "issue": "Stress spirals from repetitive negative thoughts; access to help is scarce.",
+      "solves": "A warm Thai CBT thought-record guided by ยายอารี, a kind-grandmother AI — catch → check → reframe, with a 1323 crisis fallback.",
+      "medium": "web",
+      "tags": [
+        "mental-health",
+        "cbt",
+        "thai",
+        "ai",
+        "persona"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://yai-aree.peerapongsm.dev",
+      "repo": "",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Prompt design",
+          "done": true
+        },
+        {
+          "title": "Persona / response tuning",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "กล่องพักใจ",
+      "slug": "worry-window",
+      "issue": "All-day rumination and anxiety.",
+      "solves": "CBT scheduled-worry-time: park worries in a locked box, review them only in a set daily window, and see how many never came true.",
+      "medium": "web",
+      "tags": [
+        "mental-health",
+        "cbt",
+        "thai",
+        "pwa"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://glong-pak-jai.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/glong-pak-jai",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Offline / service worker",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "คลายหนี้",
+      "slug": "klai-nee",
+      "issue": "หนี้คือความเครียดอันดับ 1 ของคนไทย หลายคนจมอยู่กับความกังวล ไม่รู้ว่าหนี้แต่ละก้อน — โดยเฉพาะหนี้นอกระบบ — แพงจริงแค่ไหน และไม่รู้ว่ามีทางออกที่ไหน",
+      "solves": "จัดระเบียบหนี้ที่กังวลและจัดอันดับก้อนที่หนักใจ เห็นดอกเบี้ยจริงต่อปี (effective APR) ของทุกก้อน เปิดโปงดอกโหดหนี้นอกระบบ แล้วได้ทางออกจริง (คลินิกแก้หนี้ 1213 / ไกล่เกลี่ย) พร้อมก้าวต่อไปที่ลงมือได้ รวมเครื่องมือคลายเครียดเรื่องหนี้กับเครื่องคำนวณต้นทุนจริง + ทางออกไว้ในที่เดียว ทำงานบนเครื่อง ไม่ต้องล็อกอิน ใช้ออฟไลน์ฟรี",
+      "medium": "web",
+      "tags": [
+        "mental-health",
+        "finance",
+        "debt",
+        "thai"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://klai-nee.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/klai-nee",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Financial model",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "GPP Floor Check",
+      "slug": "gpp-floor-check",
+      "issue": "A new pharmacy must pass GPP's 5 standards but layout/compliance is confusing.",
+      "solves": "Visual store-layout planner that checks GPP zones; validated by a pharmacist.",
+      "medium": "web",
+      "tags": [
+        "pharmacy-startup",
+        "gpp"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://gpp-floor-check.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/GPP-Floor-Check",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "set-is-dead",
+      "slug": "set-is-dead",
+      "issue": "คนไทยถูกบอกว่ากองทุนลดหย่อนภาษี/SET50 คือทางลงทุนที่ปลอดภัย แต่หลายปีผลตอบแทนแพ้ทางเลือกอื่นไกล",
+      "solves": "Backtest tool — เลือกหุ้นไทย/หุ้นโลก/ทอง/BTC เทียบกับ SET50 + กองทุนลดหย่อนภาษี (RMF/SSF/ESG) ทั้งแบบลงเงินก้อนและ DCA ย้อนได้ถึง 30 ปี โชว์ผลตอบแทน raw + หลังหักภาษีอย่างเป็นธรรม",
+      "medium": "web",
+      "tags": [
+        "finance",
+        "investing",
+        "thai",
+        "data"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://set-is-dead.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/set-is-dead",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Financial model",
+          "done": true
+        },
+        {
+          "title": "Number formatting + Thai locale",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "หาบริการรัฐใกล้ฉัน",
+      "slug": "gov-service-locator",
+      "issue": "Finding the right gov office, its hours, and required documents is painful.",
+      "solves": "Nearest gov office/hospital + hours (open data/OSM) + curated required-docs for common services.",
+      "medium": "web",
+      "tags": [
+        "civic",
+        "map"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://gov-service-locator.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/gov-service-locator",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Geolocation + markers",
+          "done": true
+        },
+        {
+          "title": "Data source integration",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "เพื่อนเกษตร",
+      "slug": "puan-kaset",
+      "issue": "เกษตรกรรายย่อยใช้ปุ๋ยตามความเคยชิน/คำชวนของร้าน เปลืองเงิน และพลาดจังหวะปลูก/คุมศัตรูพืช",
+      "solves": "แอปเดสก์ท็อปออฟไลน์ ฟรี ไม่ต้องเน็ต: คำนวณปุ๋ยตามค่าวิเคราะห์ดิน (พืชไร่+ไม้ผล) และปฏิทินเพาะปลูก/ศัตรูพืชรายภาค",
+      "medium": "desktop",
+      "tags": [
+        "agriculture",
+        "fertilizer",
+        "thai",
+        "desktop",
+        "offline"
+      ],
+      "track": "desktop",
+      "status": "done",
+      "url": "",
+      "repo": "https://github.com/peerapongsm/puan-kaset",
+      "download": "https://github.com/peerapongsm/puan-kaset/releases/latest",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Packaging / installer",
+          "done": true
+        },
+        {
+          "title": "Offline data store",
+          "done": true
+        },
+        {
+          "title": "Offline-first storage",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "เพื่อนคู่ร้าน",
+      "slug": "shop-buddy",
+      "issue": "ร้านเล็กและคนค้าขายรายย่อยเจ๊งเพราะมองไม่เห็นกระแสเงินสด ไม่รู้ว่าร้านยังไหวอยู่ไหม หนี้ SME ก็พุ่ง",
+      "solves": "ตอบคำถามง่ายๆ ราว 10-13 ข้อ แล้วเห็นภาพการเงินร้านตรงๆ: เงินหมุนเหลือกี่เดือน (runway) / ต้องขายเท่าไหร่ถึงคุ้มทุน / กำไรจริงต่อเดือน พร้อมธงเตือนจุดเสี่ยงและไอเดียปรับ รองรับ 10 ประเภทร้าน รวมไรเดอร์/แท็กซี่ ลองปรับราคาดูผลได้ เก็บประวัติดูแนวโน้มกำไร ไม่ใช้ AI ทำงานบนเครื่อง ออฟไลน์ ฟรี",
+      "medium": "web",
+      "tags": [
+        "sme",
+        "finance",
+        "thai",
+        "pwa"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://shop-buddy.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/shop-buddy",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Financial model",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "DuckDuckWash",
+      "slug": "duckduckwash",
+      "issue": "Laundry and dry-clean shops track orders on paper — lost tickets, no customer history, manual day-end totals.",
+      "solves": "Offline desktop POS for laundry shops: take orders, manage customers, track order status, and pull daily/period reports with Excel export. Local SQLite, no internet.",
+      "medium": "desktop",
+      "tags": [
+        "sme",
+        "pos",
+        "laundry",
+        "desktop",
+        "offline"
+      ],
+      "track": "desktop",
+      "status": "done",
+      "url": "",
+      "repo": "https://github.com/peerapongsm/duckduckwash",
+      "download": "https://github.com/peerapongsm/duckduckwash/releases/latest",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Packaging / installer",
+          "done": true
+        },
+        {
+          "title": "Offline data store",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "DuckDuckPlan",
+      "slug": "duckduckplan",
+      "issue": "Personal project planning is scattered across apps, with no single synced place to track tasks, timeline, and progress across devices.",
+      "solves": "Online, synced project planner: Board / Gantt / Kanban / Calendar / Matrix / Time / Dashboard views, Google sign-in, mobile-friendly, with one-way Google Calendar sync. Supabase backend. (Offline desktop build still available.)",
+      "medium": "web",
+      "tags": [
+        "productivity",
+        "project-management",
+        "web",
+        "sync"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://duckduckplan.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/duckduckplan-webapp",
+      "download": "https://github.com/peerapongsm/duckduckplan/releases/latest",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Supabase schema + RLS data model",
+          "done": true
+        },
+        {
+          "title": "React/Vite frontend (7 planner views)",
+          "done": true
+        },
+        {
+          "title": "Google sign-in (SSO)",
+          "done": true
+        },
+        {
+          "title": "Mobile-responsive UI",
+          "done": true
+        },
+        {
+          "title": "One-way Google Calendar sync",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "PromptFiled",
+      "slug": "promptfiled",
+      "issue": "Thai government and official forms are confusing to fill out correctly by hand.",
+      "solves": "A guided wizard that walks you through official Thai forms field by field and outputs a print-ready PDF.",
+      "medium": "web",
+      "tags": [
+        "civic",
+        "forms",
+        "thai",
+        "pdf"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://promptfiled.peerapongsm.dev",
+      "repo": "",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "ลด-ละ-เลิก",
+      "slug": "lod-la-lerk",
+      "issue": "คนไทยที่อยากเลิกบุหรี่/เหล้า/สิ่งเสพติด ขาดแรงจูงใจต่อเนื่องและรู้สึกว่าสู้อยู่คนเดียว",
+      "solves": "แอปมือถือ (iOS/Android) นับวันที่เลิกได้ พร้อมไฟ streak ที่เปลี่ยนสีตามเวลา เช็คอินรายวัน กระดานผู้นำให้รู้สึกไม่โดดเดี่ยว และการเตือนในเครื่อง — 100% ออฟไลน์ ไม่เก็บข้อมูลออกนอกเครื่อง",
+      "medium": "mobile",
+      "tags": [
+        "addiction",
+        "quit",
+        "streak",
+        "thai",
+        "mobile",
+        "offline",
+        "flutter"
+      ],
+      "track": "mobile",
+      "status": "done",
+      "url": "",
+      "repo": "https://github.com/peerapongsm/lod-la-lerk",
+      "download": "https://github.com/peerapongsm/lod-la-lerk/releases/latest",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Native build config",
+          "done": true
+        },
+        {
+          "title": "On-device storage",
+          "done": true
+        },
+        {
+          "title": "Offline-first storage",
+          "done": true
+        },
+        {
+          "title": "Sync-on-reconnect",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "RunClub Social",
+      "slug": "runclub-social",
+      "issue": "ชมรมวิ่งต้องกระจายงานหลายแอป — นัดวิ่งใน LINE ดู GPS ใน Strava ไม่มีที่เดียวที่รวมชมรม อีเวนต์ แชท และการวิ่งสดไว้ด้วยกัน",
+      "solves": "แอปมือถือ social × running สำหรับชมรมวิ่ง: สร้างชมรม นัดอีเวนต์ วิ่งสดเห็นเพื่อนร่วมทางบนแผนที่แบบ real-time บันทึกเส้นทางและสถิติ แชท และฟีดกิจกรรม — งานสร้างให้ลูกค้า (client project)",
+      "medium": "mobile",
+      "tags": [
+        "running",
+        "club",
+        "social",
+        "gps",
+        "realtime",
+        "react-native",
+        "supabase",
+        "client"
+      ],
+      "track": "mobile",
+      "status": "funding",
+      "url": "https://runclub.peerapongsm.dev/",
+      "repo": "",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        },
+        {
+          "title": "Unit tests",
+          "done": true
+        },
+        {
+          "title": "Edge-case handling",
+          "done": true
+        },
+        {
+          "title": "Responsive mobile layout",
+          "done": true
+        },
+        {
+          "title": "Visual + theme polish",
+          "done": true
+        },
+        {
+          "title": "Copy / prose pass",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "สายโจรจำลอง",
+      "slug": "scam-call-trainer",
+      "issue": "แก๊งคอลเซ็นเตอร์หลอกคนไทยเสียหายมหาศาลทุกปี แต่คนส่วนใหญ่ไม่เคยได้ 'ซ้อม' รับสายโจรจริงๆ",
+      "solves": "AI สวมบทมิจฉาชีพโทรมาหาคุณ ฝึกจับพิรุธและวางสายให้ทัน ให้คะแนน+การ์ดแชร์ อ้างอิงสถิติความเสียหายจากศูนย์ AOC 1441/ตำรวจ และรูปแบบกลโกงที่เผยแพร่อย่างเป็นทางการ",
+      "medium": "web",
+      "tags": [
+        "viral",
+        "ai",
+        "scam",
+        "safety",
+        "thai",
+        "persona"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://scam-call-trainer.peerapongsm.dev",
+      "repo": "https://github.com/peerapongsm/scam-call-trainer",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "หนี้ครัวเรือนสด",
+      "slug": "debt-counter",
+      "issue": "หนี้ครัวเรือนไทยเป็นตัวเลขระดับล้านล้านที่ไม่มีใครรู้สึกอะไรกับมัน เพราะมันใหญ่เกินจินตนาการ",
+      "solves": "หน้าเดียว ตัวเลขหนี้ครัวเรือนไทยวิ่งขึ้นแบบเรียลไทม์ พร้อม 'ส่วนของคุณ' ต่อหัว อ้างอิงสถิติธนาคารแห่งประเทศไทยและ NSO",
+      "medium": "web",
+      "tags": [
+        "viral",
+        "finance",
+        "debt",
+        "data",
+        "thai",
+        "bot"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://debt-counter.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/debt-counter",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "หวยจำลอง",
+      "slug": "lottery-time-machine",
+      "issue": "คนไทยซื้อหวยทุกงวดมาทั้งชีวิต แต่ไม่เคยเห็นตัวเลขรวมว่าจ่ายไปเท่าไหร่ ถูกคืนมาเท่าไหร่",
+      "solves": "กรอกเลขเด็ด 6 หลัก + ปีที่เริ่มซื้อ → replay ทุกงวดจริงย้อนหลังถึง พ.ศ. 2533 (872 งวด) แบบ deterministic เห็นยอดจ่าย/ถูกคืน/สุทธิ + เทียบถ้าเอาเงินไป DCA ทองคำ/SET50/S&P500/BTC พร้อมการ์ดแชร์",
+      "medium": "web",
+      "tags": [
+        "viral",
+        "finance",
+        "lottery",
+        "data",
+        "thai",
+        "simulation"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://lottery-time-machine.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/lottery-time-machine",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Share card assets",
+          "done": true
+        },
+        {
+          "title": "SEO metadata",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "หมาแมวจร",
+      "slug": "pawmap",
+      "issue": "หมาแมวจรกระจายทั่วเมืองแต่ไม่มีข้อมูลว่าจุดไหนหนาแน่น — คนเลี่ยงเส้นหมาดุไม่ได้ เทศบาลวางแผนทำหมัน/ฉีดวัคซีนโดยไม่มีข้อมูลพื้นที่จริง",
+      "solves": "แอปแผนที่รายงานจุดพบหมา–แมวจรโดยคนในพื้นที่: ปักหมุดใน 15 วินาที เห็นความหนาแน่นบนแผนที่ แอดมิน export สรุปรายตำบล/อำเภอส่งเทศบาล — งานสร้างให้ลูกค้า (client project)",
+      "medium": "mobile",
+      "tags": [
+        "map",
+        "stray-animals",
+        "crowdsource",
+        "postgis",
+        "react-native",
+        "supabase",
+        "client"
+      ],
+      "track": "mobile",
+      "status": "funding",
+      "url": "https://pawmap.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/pawmap",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Geolocation + markers",
+          "done": true
+        },
+        {
+          "title": "Data source integration",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        },
+        {
+          "title": "Unit tests",
+          "done": true
+        },
+        {
+          "title": "Edge-case handling",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "เกมปุ่มเดียว",
+      "slug": "one-button-games",
+      "issue": "เกมสมัยนี้ซับซ้อนเกินไป — บางทีความสนุกต้องการแค่ปุ่มเดียว",
+      "solves": "รวมมินิเกม 3 เกมเล่นด้วยปุ่มเดียว: กระสือพุ่ง (ลอยลอดต้นตาลกลางทุ่งนา) ปิ้งหมูสองด้าน (พลิกไม้ให้สุกพร้อมกันสองด้าน มีถ่านลุก-ลมพัด) ข้ามถนนให้รอด — pixel art วาดเป็น sprite ฝังในโค้ดทั้งหมด",
+      "medium": "web",
+      "tags": [
+        "play",
+        "game",
+        "pixel-art",
+        "one-button",
+        "thai"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://one-button-games.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/one-button-games",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "หมากรุกไทยออนไลน์",
+      "slug": "makruk",
+      "issue": "หมากรุกสากลมีเว็บดีๆ เป็นพัน แต่หมากรุกไทยแทบไม่มีเวอร์ชันเว็บสมัยใหม่",
+      "solves": "หมากรุกไทยกติกาเต็ม (เบี้ยหงาย, นับกระดาน/นับศักดิ์หมากตามตาราง) เล่น 2 คนหรือสู้บอท 3 ระดับ (minimax ใน Web Worker) — engine เขียนเองทั้งตัว perft-tested, ดีไซน์ลายรดน้ำดำ-ทอง",
+      "medium": "web",
+      "tags": [
+        "play",
+        "game",
+        "makruk",
+        "thai",
+        "engine"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://makruk.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/makruk",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Difficulty tuning",
+          "done": true
+        },
+        {
+          "title": "Save / progress system",
+          "done": true
+        },
+        {
+          "title": "Win/lose states",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "ทายจังหวัดวันละครั้ง",
+      "slug": "daily-puzzle",
+      "issue": "เกม daily แบบ Wordle สร้างผู้เล่นประจำได้ดีที่สุด แต่ยังไม่มีเวอร์ชันทายจังหวัดไทย",
+      "solves": "วันละ 1 จังหวัด ใบ้ 6 ชั้น (เงาโครงร่าง→ภาค→ประชากร→จังหวัดติดกัน→คำขวัญ→อักษรแรก) + feedback ระยะทาง/ทิศ, ข้อมูลจริง 77 จังหวัด, แชร์ emoji grid, สถิติ local",
+      "medium": "web",
+      "tags": [
+        "play",
+        "daily",
+        "puzzle",
+        "thai",
+        "geography"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://daily-puzzle.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/daily-puzzle",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Traffic God",
+      "slug": "traffic-god",
+      "issue": "คนกรุงเทพด่าไฟแดงทุกวัน — แต่ไม่เคยได้ลองคุมเอง",
+      "solves": "คุมไฟแดงสี่แยกเอง 5 ด่าน: รถเมล์ช้า มอไซค์แทรก รถพยาบาลต้องปล่อยด่วน ฝนตก spawn พุ่ง — sim deterministic ล้วน, แพ้เมื่อความเดือดรวมระเบิด",
+      "medium": "web",
+      "tags": [
+        "play",
+        "simulation",
+        "bangkok",
+        "traffic"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://traffic-god.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/traffic-god",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Simulation model",
+          "done": true
+        },
+        {
+          "title": "Parameter tuning",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "พิมพ์ไล่ผี",
+      "slug": "typing-ghosts",
+      "issue": "เว็บฝึกพิมพ์ไทยทุกอันน่าเบื่อจนหลับ",
+      "solves": "ผีไทย 5 ชนิดลอยเข้าหาศาล — พิมพ์คำไทยให้จบก่อนถึงตัว, matcher ระดับ code-point รองรับสระ/วรรณยุกต์จริง, คำ 470+ คำ 3 ระดับ, บอส แม่นาค",
+      "medium": "web",
+      "tags": [
+        "play",
+        "game",
+        "typing",
+        "thai"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://typing-ghosts.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/typing-ghosts",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "ลายไทย Generator",
+      "slug": "lai-thai-generator",
+      "issue": "ลายไทย (กนก ประจำยาม) เป็นศิลปะ parametric โดยธรรมชาติ แต่ไม่มีใครทำเวอร์ชัน generative",
+      "solves": "สร้างลายประจำยาม/กนก/ลายต่อเนื่องจากคณิตล้วน ปรับพารามิเตอร์สด, seed แชร์ได้ใน URL, ดาวน์โหลด SVG/PNG ใช้ฟรี CC0 — กนก geometry ผ่านการ iterate 3 รอบจน silhouette เป็นกนกจริง",
+      "medium": "web",
+      "tags": [
+        "art",
+        "design",
+        "generative",
+        "thai"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://lai-thai-generator.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/lai-thai-generator",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        },
+        {
+          "title": "Unit tests",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "เสียงฝนเมืองไทย",
+      "slug": "sound-of-rain",
+      "issue": "แอปเสียง ambient ฝรั่งมีเป็นร้อย แต่ไม่มีอันไหนเป็นฝนตกหลังคาสังกะสี",
+      "solves": "เสียงฝนสังเคราะห์สดด้วย Web Audio ทั้งหมด (0 ไฟล์เสียง): หลังคาสังกะสี/กระเบื้อง/เต็นท์, ฟ้าร้องไกล, จิ้งหรีด, sleep timer — ฉากเงา skyline สังกะสี",
+      "medium": "web",
+      "tags": [
+        "art",
+        "sound",
+        "ambient",
+        "thai",
+        "webaudio"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://sound-of-rain.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/sound-of-rain",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Web Audio synth engine",
+          "done": true
+        },
+        {
+          "title": "Sound toggle + autoplay handling",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "ชีวิตเป็นสัปดาห์",
+      "slug": "life-in-weeks",
+      "issue": "เราไม่เคยเห็นชีวิตทั้งชีวิตในภาพเดียว",
+      "solves": "grid 1 ช่อง = 1 สัปดาห์ทั้งชีวิต (อายุคาดเฉลี่ยไทย WHO 2020) + ช่วงวัยไทย + milestone เอง + ตัวเลขสะเทือนใจ + export โปสเตอร์ PNG — ทุกอย่าง on-device · อัปเดต 2026-07: ตั้งค่าเองได้ — เลือกประเทศ/ปีข้อมูล WHO (39 ประเทศ, ดึงจาก GHO WHOSIS_000001 จริง), ใส่อายุคาดเฉลี่ยของตัวเอง+พ่อแม่เอง (override ค่า WHO), และจำนวนครั้งที่เจอพ่อแม่ต่อปี",
+      "medium": "web",
+      "tags": [
+        "art",
+        "existential",
+        "poster",
+        "data"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://life-in-weeks.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/life-in-weeks",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Life-in-weeks grid render",
+          "done": true
+        },
+        {
+          "title": "WHO life-expectancy data bake",
+          "done": true
+        },
+        {
+          "title": "Country + year picker (39 countries)",
+          "done": true
+        },
+        {
+          "title": "Self + parent LE overrides",
+          "done": true
+        },
+        {
+          "title": "Visits-per-year -> remaining visits",
+          "done": true
+        },
+        {
+          "title": "Settings storage migration",
+          "done": true
+        },
+        {
+          "title": "Graceful country/year fallback",
+          "done": true
+        },
+        {
+          "title": "JSX whitespace fix (Latin/Thai)",
+          "done": true
+        },
+        {
+          "title": "69 unit tests",
+          "done": true
+        },
+        {
+          "title": "Deploy + life-in-weeks.peerapongsm.dev",
+          "done": true
+        },
+        {
+          "title": "Course social assets",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "CSS ตลาดสด",
+      "slug": "css-talad",
+      "issue": "งานคราฟต์ล้วน: ตลาดสดไทยทั้งฉากด้วย CSS/SVG",
+      "solves": "ฉากตลาดสด 6 แผง (ผัก ผลไม้ หมู ปลา มาลัย กับข้าว) + แมว + พื้นเปียก วาดด้วย CSS/SVG ล้วน 0 รูปภาพ, โหมดดูโค้ดจิ้มดู CSS จริงทุกชิ้น, สลับเช้า/ค่ำ",
+      "medium": "web",
+      "tags": [
+        "art",
+        "css",
+        "craft",
+        "thai"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://css-talad.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/css-talad",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "ฟอนต์ลายมือคุณ",
+      "slug": "handwriting-font",
+      "issue": "อยากได้ฟอนต์ลายมือตัวเองแต่บริการทำฟอนต์แพงและยุ่งยาก",
+      "solves": "วาดตัวอักษรบนจอ → ได้ไฟล์ .ttf จริง ทำงานใน browser 100% — TTF encoder เขียนเองทั้งตัว (round-trip tested + ผ่าน Chromium OTS), ไทย+ละติน 150+ glyph, preview สดด้วยฟอนต์ตัวเอง",
+      "medium": "web",
+      "tags": [
+        "art",
+        "font",
+        "thai",
+        "tool"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://handwriting-font.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/handwriting-font",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Glyph capture",
+          "done": true
+        },
+        {
+          "title": "Font export (ttf/woff)",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "if — ถ้า",
+      "slug": "if",
+      "issue": "นิยายเลือกทางเดินไทยมักมีแนวเดียว; รวมหลายแนวใน engine เดียวแทบไม่มีใครทำ",
+      "solves": "anthology นิยายเลือกทางเดิน (CYOA) ไทยหลายแนวในแอปเดียว: «หนึ่งคืนที่หอพัก» + «รถเมล์สายสุดท้าย» (สยองขวัญ), «แฟนปลอม 7 วัน» (รอมคอม), «วันแรกที่บริษัทจำกัด» (เสียดสีออฟฟิศ), «ตำรับรักกรุงเก่า» (ย้อนเวลา — เชฟ modern ในกรุงเก่า, 2 มิเตอร์ กลมกลืน+ใจ) — engine generic named-meter (เดี่ยว+คู่) แต่ละแนวมี viz/ธีมสี/เสียงบรรยากาศของตัวเอง, secret endings, ปรับความเร็วตัวอักษร, กราฟทุกเรื่อง validate เป็น test, deep-link ต่อเรื่อง",
+      "medium": "web",
+      "tags": [
+        "story",
+        "fiction",
+        "horror",
+        "thai",
+        "romance",
+        "satire",
+        "timetravel",
+        "period"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://if.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/if",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Unify meter engine (candles/hearts/battery)",
+          "done": true
+        },
+        {
+          "title": "Multi-meter engine (additive seam)",
+          "done": true
+        },
+        {
+          "title": "Story: หอพัก (horror)",
+          "done": true
+        },
+        {
+          "title": "Story: รถเมล์สายสุดท้าย (horror)",
+          "done": true
+        },
+        {
+          "title": "Story: แฟนปลอม 7 วัน (romance)",
+          "done": true
+        },
+        {
+          "title": "Story: วันแรกที่บริษัทจำกัด (satire)",
+          "done": true
+        },
+        {
+          "title": "Story: ตำรับรักกรุงเก่า (time-travel)",
+          "done": true
+        },
+        {
+          "title": "Chapter progress bars",
+          "done": true
+        },
+        {
+          "title": "Per-route genre theming",
+          "done": true
+        },
+        {
+          "title": "Neutral gallery landing",
+          "done": true
+        },
+        {
+          "title": "Text-speed settings (4 levels)",
+          "done": true
+        },
+        {
+          "title": "Ambient audio per genre",
+          "done": true
+        },
+        {
+          "title": "Endings = flags model",
+          "done": true
+        },
+        {
+          "title": "thai-prose-style pass",
+          "done": true
+        },
+        {
+          "title": "50 unit tests",
+          "done": true
+        },
+        {
+          "title": "Rename repo if-horpak -> if",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "เพลงจากเส้นทางของคุณ",
+      "slug": "commute-music",
+      "issue": "ไร้ประโยชน์โดยสิ้นเชิง — และนั่นแหละคือประเด็น",
+      "solves": "เลือกสายรถไฟฟ้า+สถานีต้น-ปลาย → เส้นทางกลายเป็นเมโลดี้ (สถานี=โน้ต, interchange=คอร์ด, 4 timbre สังเคราะห์) — 4 สายหลัก BTS/MRT/ARL, แชร์เพลงผ่าน URL",
+      "medium": "web",
+      "tags": [
+        "art",
+        "music",
+        "toy",
+        "bangkok"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://commute-music.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/commute-music",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Web Audio synth engine",
+          "done": true
+        },
+        {
+          "title": "Generative mapping",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Whistle to Search",
+      "slug": "whistle-search",
+      "issue": "UI ด้วยเสียงผิวปาก — เพราะทำได้",
+      "solves": "ผิวปากทำนอง → เว็บทายเพลง (pitch detection + Parsons code เขียนเอง, 12 เพลง public domain, integration test 12/12) + โหมด theremin — ประมวลผลในเครื่องล้วน ไม่อัดไม่ส่ง",
+      "medium": "web",
+      "tags": [
+        "toy",
+        "audio",
+        "dsp",
+        "weird-input"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://whistle-search.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/whistle-search",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        },
+        {
+          "title": "Unit tests",
+          "done": true
+        },
+        {
+          "title": "Edge-case handling",
+          "done": true
+        },
+        {
+          "title": "Responsive mobile layout",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "แดดบอกเวลา",
+      "slug": "shadow-clock",
+      "issue": "นาฬิกาแดดคือเทคโนโลยีพันปี — มือถือคุณคือหน้าปัดใหม่",
+      "solves": "นาฬิกาแดด virtual ตามพิกัดจริง (NOAA solar math ±2 นาที cross-checked) + ฟ้าเปลี่ยนสีตามเวลา + generate แผ่นนาฬิกาแดดกระดาษพิมพ์ได้เฉพาะละติจูดคุณ พับใช้ได้จริง",
+      "medium": "web",
+      "tags": [
+        "toy",
+        "science",
+        "sun",
+        "print"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://shadow-clock.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/shadow-clock",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Plant Cam Timelapse",
+      "slug": "plant-timelapse",
+      "issue": "ถ่ายรูปต้นไม้ทุกวันแต่รูปเอียงไปคนละทาง ทำ timelapse ไม่ได้สักที",
+      "solves": "โหลดรูปทั้งชุด จิ้ม 2 จุดอ้างอิง → จัดแนวด้วย similarity transform (คณิตปิดรูป) → export วิดีโอ WebM — ทำใน browser ทั้งหมด รูปไม่ออกจากเครื่อง",
+      "medium": "web",
+      "tags": [
+        "toy",
+        "photo",
+        "plant",
+        "tool"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://plant-timelapse.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/plant-timelapse",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "เว็บที่ช้าที่สุดในประเทศไทย",
+      "slug": "slowest-website",
+      "issue": "อินเทอร์เน็ตเร็วขึ้นทุกปี — เว็บนี้ขอสวนกระแส",
+      "solves": "performance art: บังคับรอ 3 นาทีผ่าน 7 ฉาก (dial-up, progress bar โกหก, โฆษณาปิดไม่ได้, 99% ค้าง) จบด้วย certificate ความอดทน — ไฟล์จริงเล็กจิ๋ว /method สารภาพหมด + เสียงประกอบสังเคราะห์ทุกฉาก (Web Audio ล้วน ไม่มีไฟล์เสียง)",
+      "medium": "web",
+      "tags": [
+        "toy",
+        "art",
+        "absurd",
+        "comedy"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://slowest-website.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/slowest-website",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "หน้าเว็บปี 2004",
+      "slug": "web-2004",
+      "issue": "คนอายุ 30+ คิดถึงยุค hi5 เคอร์เซอร์วิบวับ เพลง MIDI",
+      "solves": "โฮมเพจน้องเมย์ ม.4 (สมมติ) ครบสูตร 2004: sparkle cursor, marquee, hit counter, guestbook, chiptune แต่งเอง — พร้อมโหมดพิพิธภัณฑ์ 16 annotations อธิบายว่าแต่ละอย่างคืออะไรและตายเพราะอะไร",
+      "medium": "web",
+      "tags": [
+        "toy",
+        "nostalgia",
+        "thai",
+        "museum"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://web-2004.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/web-2004",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Two-Person Pixel Canvas",
+      "slug": "pixel-canvas",
+      "issue": "r/place สนุกเพราะคนแปลกหน้าสร้างอะไรด้วยกัน — แต่ scale เล็กๆ ก็มีเสน่ห์",
+      "solves": "canvas 64×64 วาดกับเพื่อน 1 คนสดๆ ผ่าน WebRTC ตรง ไม่มี server เลย (ลิงก์ชวน/QR สแกนเข้าห้องอัตโนมัติ), 64 สี + ยางลบ + undo, LWW grid + validate กัน timestamp poisoning, export PNG",
+      "medium": "web",
+      "tags": [
+        "toy",
+        "multiplayer",
+        "pixel",
+        "webrtc"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://pixel-canvas.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/pixel-canvas",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Pixel canvas + palette",
+          "done": true
+        },
+        {
+          "title": "Draw / erase / undo tools",
+          "done": true
+        },
+        {
+          "title": "Interaction + state",
+          "done": true
+        },
+        {
+          "title": "Unit tests",
+          "done": true
+        },
+        {
+          "title": "Edge-case handling",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "สารภาพกับความว่างเปล่า",
+      "slug": "confession",
+      "issue": "บางเรื่องแค่อยากพูดออกมา ไม่ได้อยากให้ใครเก็บไว้",
+      "solves": "พิมพ์ → เลือกปล่อย (เผา/ลอยกระทง/ลม) → หายไปจริง: zero-storage บังคับด้วย test (ไม่มี network/localStorage แตะข้อความเลย) + crisis card 1323",
+      "medium": "web",
+      "tags": [
+        "toy",
+        "privacy",
+        "calm",
+        "mental-health"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://confession.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/confession",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "QR Code ทำงานยังไง",
+      "slug": "qr-explorable",
+      "issue": "ทุกคนสแกน QR วันละสิบครั้งแต่ไม่มีใครรู้ว่าข้างในคืออะไร",
+      "solves": "explorable 6 ตอน: พิมพ์ข้อความเอง → เห็น QR ประกอบทีละชั้น (encoder เขียนเอง GF(256)+Reed-Solomon ตรง reference vectors) + ระบายทับแล้วยังสแกนได้ + แกะโครง PromptPay",
+      "medium": "web",
+      "tags": [
+        "learn",
+        "explorable",
+        "qr",
+        "thai"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://qr-explorable.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/qr-explorable",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "สอนคอมให้เดา",
+      "slug": "teach-machine",
+      "issue": "AI เป็นกล่องดำสำหรับคนทั่วไป — จนกว่าจะได้สอนมันเองกับมือ",
+      "solves": "วาดตัวอย่างสอน 2-3 หมวด → เครื่องเดาของใหม่ + โชว์ว่าทำไม (เพื่อนบ้านใกล้สุด 3 ตัวอย่างจริง) — KNN เขียนเอง โปร่งใสทั้งระบบ, บทเรียน bias/data แทรก",
+      "medium": "web",
+      "tags": [
+        "learn",
+        "ai",
+        "interactive",
+        "thai"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://teach-machine.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/teach-machine",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        },
+        {
+          "title": "Explorable interactions",
+          "done": true
+        },
+        {
+          "title": "Step-by-step reveal",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "0.1 + 0.2 ≠ 0.3",
+      "slug": "float-horror",
+      "issue": "บั๊กคลาสสิกที่ dev ทุกคนเจอ แต่คำอธิบายภาษาไทยดีๆ แทบไม่มี",
+      "solves": "explorable 5 ตอน: เครื่องคิดเลขพัง → ผ่าชิ้น 64 บิต (exact decimal เต็มทุกหลักด้วย BigInt) → เศษส่วนฐานสอง → อุบัติเหตุจริง (Patriot/Vancouver/Ariane cited) → วิธีรอด (เงินคิดเป็นสตางค์ int)",
+      "medium": "web",
+      "tags": [
+        "learn",
+        "cs",
+        "interactive",
+        "thai"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://float-horror.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/float-horror",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Desk Rain",
+      "slug": "desk-rain",
+      "issue": "แอปพยากรณ์บอกทุกอย่างยกเว้นสิ่งเดียวที่อยากรู้: อีกเดี๋ยวฝนจะตกที่บ้านไหม",
+      "solves": "จอเดียวตอบชัด: ฝนกำลังตก / จะถึงใน ~X นาที / แห้งอีก 2 ชม. (Open-Meteo nowcast 15 นาที) + timeline กระจกฝ้า + desk mode auto-refresh — honesty: model ไม่ใช่เรดาร์",
+      "medium": "web",
+      "tags": [
+        "toy",
+        "weather",
+        "ambient",
+        "data"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://desk-rain.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/desk-rain",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + scope",
+          "done": true
+        },
+        {
+          "title": "Core data model",
+          "done": true
+        },
+        {
+          "title": "Core logic",
+          "done": true
+        },
+        {
+          "title": "Primary UI",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "เติมบุญ",
+      "slug": "term-boon",
+      "issue": "เศรษฐกิจบุญ — ทำบุญแบบเติมเงินมือถือ หวังผลตอบแทนเป็นตัวเลข ไม่มีใครเสียดสีให้เล่นได้จริง",
+      "solves": "Thai idle clicker «บุญWallet»: คลิกทำบุญ 5 ระดับ (หยอดตู้→สแกน QR) · 11 กิจการบุญ · ~44 อัปเกรด · เวียนว่ายตายเกิดสะสมบารมี · จบเกมด้วยนิพพาน — เลิกเล่นคือทางเดียวที่ชนะ · หน่วยบาลี โกฏิ→อสงไขย (sourced) · pacing คุมด้วย greedy-bot sim ใน CI · pixel art ทำมือ 16 ชิ้น · อัปเดตใหญ่ 2026-07: ระบบ «เครดิตบุญ» (share-based target + audit tax + เทวดา gate ปลดด้วย active click-burst) · สินเชื่อบุญ (BNPL parody) · โฆษณาบุญ diegetic (static + floating) + แท็บเครดิตบน navbar · producer เพิ่มเป็น 14 (NFT/IPO/เมตาเวิร์สวัด) · rebirth ladder 7 ชั้น billions-scale (เทพบุตร→อรหันต์) · endless mode «เวียนว่ายต่อ» · click-combo ศรัทธา · event UFO/เจ็ท (generic satire) · news ticker · 80 tests",
+      "medium": "web",
+      "tags": [
+        "game",
+        "satire",
+        "idle",
+        "toy"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://term-boon.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/term-boon",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Idle-engine core loop + producers",
+          "done": true
+        },
+        {
+          "title": "Prestige / barami rebirth ladder",
+          "done": true
+        },
+        {
+          "title": "เครดิตบุญ merit-credit system",
+          "done": true
+        },
+        {
+          "title": "Audit tax + เทวดา credit gate",
+          "done": true
+        },
+        {
+          "title": "Click-combo ศรัทธา",
+          "done": true
+        },
+        {
+          "title": "สินเชื่อบุญ loan mechanic",
+          "done": true
+        },
+        {
+          "title": "โฆษณาบุญ diegetic ads",
+          "done": true
+        },
+        {
+          "title": "Producers 12-14 + hand-crafted sprites",
+          "done": true
+        },
+        {
+          "title": "Rebirth ladder rescaled to billions",
+          "done": true
+        },
+        {
+          "title": "News ticker + satire events",
+          "done": true
+        },
+        {
+          "title": "Save migration (v2)",
+          "done": true
+        },
+        {
+          "title": "Offline economy + tax",
+          "done": true
+        },
+        {
+          "title": "Pacing re-simulation",
+          "done": true
+        },
+        {
+          "title": "Credit navbar bureau UI",
+          "done": true
+        },
+        {
+          "title": "Endless mode + samsara counter",
+          "done": true
+        },
+        {
+          "title": "Hostile-input validation",
+          "done": true
+        },
+        {
+          "title": "80 unit tests",
+          "done": true
+        },
+        {
+          "title": "Balance pass: producer curve cliff fix",
+          "done": true
+        },
+        {
+          "title": "Opus final review: gate reachability fix",
+          "done": true
+        },
+        {
+          "title": "Deploy + armory bump",
+          "done": true
+        },
+        {
+          "title": "Domain glossary + CONTEXT",
+          "done": true
+        },
+        {
+          "title": "Satire guardrail pass",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "เรียนรู้ Claude Architect",
+      "slug": "course",
+      "issue": "อยากเข้าใจการออกแบบระบบ production ด้วย Claude (Agent SDK, API, Claude Code, MCP) แต่ exam guide เป็น bullet อังกฤษล้วน อ่านแล้วไม่เห็นภาพ — ไม่มีที่เรียนแบบ interactive ภาษาไทยที่สอนให้เข้าใจจริง ไม่ใช่แค่ติวข้อสอบ",
+      "solves": "Study guide interactive ภาษาไทยครอบคลุมทุก topic ของ Claude Certified Architect – Foundations: 60 บทเรียน 5 โมดูล (agentic loop, tool/MCP design, Claude Code config, prompt/structured output, context/reliability) · ทุก technical claim verify กับ Anthropic docs จริง + ลิงก์อ่านต่อ (จับ doc-vs-guide เช่น Task→Agent tool, allowed-tools = pre-approve ไม่ใช่ restrict) · 8 interactive sim (agentic loop stepper, tool picker, glob matcher, schema extraction, context window ฯลฯ) + 2 decision widget · full-text search Ctrl/Cmd-K (Thai substring) · progress localStorage · เน้นเรียนรู้ไม่ใช่ติวข้อสอบ · Next 15 static export + MDX · 253 tests",
+      "medium": "web",
+      "tags": [
+        "education",
+        "reference",
+        "ai"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://course.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/course",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Scope Claude Architect exam guide v0.2",
+          "done": true
+        },
+        {
+          "title": "Next 15 static-export + MDX pipeline",
+          "done": true
+        },
+        {
+          "title": "Content codegen registry (split data/components)",
+          "done": true
+        },
+        {
+          "title": "Module 1: Foundations lessons",
+          "done": true
+        },
+        {
+          "title": "Module 2: Prompting + context lessons",
+          "done": true
+        },
+        {
+          "title": "Module 3: Tools + MCP lessons",
+          "done": true
+        },
+        {
+          "title": "Module 4: Agents + orchestration lessons",
+          "done": true
+        },
+        {
+          "title": "Module 5: Safety + eval lessons",
+          "done": true
+        },
+        {
+          "title": "60 lessons doc-verified vs Anthropic docs",
+          "done": true
+        },
+        {
+          "title": "Sim: agentic loop",
+          "done": true
+        },
+        {
+          "title": "Sim: glob match",
+          "done": true
+        },
+        {
+          "title": "Sim: tool-choice",
+          "done": true
+        },
+        {
+          "title": "Sim: schema extract",
+          "done": true
+        },
+        {
+          "title": "Sim: coordinator",
+          "done": true
+        },
+        {
+          "title": "Sim: context window (illustrative)",
+          "done": true
+        },
+        {
+          "title": "Sim: tool picker (illustrative)",
+          "done": true
+        },
+        {
+          "title": "Sim: error decision",
+          "done": true
+        },
+        {
+          "title": "Decision widgets x2",
+          "done": true
+        },
+        {
+          "title": "Honesty labels on illustrative sims",
+          "done": true
+        },
+        {
+          "title": "Full-text search (Ctrl/Cmd-K)",
+          "done": true
+        },
+        {
+          "title": "Progress + resume via localStorage",
+          "done": true
+        },
+        {
+          "title": "Collapsible sidebar + module accordion",
+          "done": true
+        },
+        {
+          "title": "Warm-docs light/dark theme",
+          "done": true
+        },
+        {
+          "title": "Content validator gate",
+          "done": true
+        },
+        {
+          "title": "259 unit tests",
+          "done": true
+        },
+        {
+          "title": "Deploy: GitHub Pages + course.peerapongsm.dev",
+          "done": true
+        },
+        {
+          "title": "Armory entry + CONTEXT map",
+          "done": true
+        },
+        {
+          "title": "Social hero + repurpose pack",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "โฆษณานรก",
+      "slug": "ads",
+      "issue": "อินเทอร์เน็ตทุกวันนี้เต็มไปด้วยโฆษณาหลอก dark pattern — ป๊อปอัปรางวัลปลอม เว็บพนัน สินเชื่อเถื่อน scareware นับถอยหลังปลอม — เจอทุกวันจนชินจนแยกไม่ออกว่าอันไหนกลลวง แถมเว็บที่มีแต่โฆษณาเจ้าของก็แทบไม่ได้เงินจริง",
+      "solves": "เว็บ «มีแต่โฆษณา» เชิงเสียดสี — feed เลื่อนไม่รู้จบของโฆษณาปลอมที่ generate เอง ล้อ dark pattern จริง 11 แบบ (แต่ละใบแตะพลิกดูเฉลยว่าเสียดสีกลลวงอะไร ไทย + English term) · แทรกการ์ด affiliate จริง (Shopee) ที่ disclose ชัดทั้ง 2 ชั้น กดช้อปเองเท่านั้น ไม่หลอกคลิก · แตะพลิกจับผิดว่าอันไหนจริงอันไหนล้อ + counter · chrome ทั้งหมด (disclosure/about/เสียง) อำพรางเป็นโฆษณา · node-cap endless scroll กัน memory leak · guardrail ไม่มี brand จริง โฆษณาปลอมกดไม่ได้ · Vite+TS subagent-driven. [redesign] banner รูปภาพ (royalty-free object photos + procedural SVG motif), layout แยก desktop ad-portal เต็มจอ (masonry ปรับคอลัมน์ตามจอ) vs mobile single-column feed, real affiliate card โชว์รูปสินค้าจริง, แก้บั๊ก adblock บน desktop (rename class ad-* → กัน cosmetic filter ซ่อนหน้าเปล่า)",
+      "medium": "web",
+      "tags": [
+        "satire",
+        "advertising",
+        "interactive",
+        "responsive"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://ads.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/ads",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm dark-pattern catalog",
+          "done": true
+        },
+        {
+          "title": "Endless-scroll ad feed (node cap 60)",
+          "done": true
+        },
+        {
+          "title": "11 dark-pattern ad templates",
+          "done": true
+        },
+        {
+          "title": "Tap-to-flip bilingual reveal",
+          "done": true
+        },
+        {
+          "title": "Affiliate Shopee real offers + disclosure",
+          "done": true
+        },
+        {
+          "title": "Chrome-as-ads disguise",
+          "done": true
+        },
+        {
+          "title": "Shuffle-bag affiliate insertion",
+          "done": true
+        },
+        {
+          "title": "Sound synth + toggle",
+          "done": true
+        },
+        {
+          "title": "Reduced-motion path",
+          "done": true
+        },
+        {
+          "title": "32 unit tests",
+          "done": true
+        },
+        {
+          "title": "Guardrail: no real brands",
+          "done": true
+        },
+        {
+          "title": "Deploy + ads.peerapongsm.dev",
+          "done": true
+        },
+        {
+          "title": "HTTPS cert re-kick",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "เซียมซี",
+      "slug": "siamsi",
+      "issue": "เซียมซีออนไลน์ทั่วไปแค่กดสุ่ม ไม่มีสัมผัสของการเขย่ากระบอกจริง",
+      "solves": "ถือมือถือเป็นกระบอกเซียมซี เขย่าจริงด้วย accelerometer ให้ไม้หลุดออกมา เผยคำทำนาย 1 ใน 28 บทที่เขียนเองในสำนวนดั้งเดิม เล่นออฟไลน์ ไม่มี backend",
+      "medium": "web",
+      "tags": [
+        "thai-culture",
+        "interactive",
+        "motion-sensor",
+        "web"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://siamsi.peerapongsm.dev/",
+      "repo": "siamsi",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + tone lock",
+          "done": true
+        },
+        {
+          "title": "ตรวจจับการเขย่า (device motion / accelerometer)",
+          "done": true
+        },
+        {
+          "title": "กลไกไม้หลุด + สุ่มผล",
+          "done": true
+        },
+        {
+          "title": "28 คำทำนาย (เขียนเอง) + reveal UI",
+          "done": true
+        },
+        {
+          "title": "Deploy siamsi.peerapongsm.dev",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "เอนจินโคลงกลอน",
+      "slug": "klon",
+      "issue": "ไม่มีเครื่องมือเว็บตรวจฉันทลักษณ์กลอนไทยแบบ interactive มีแต่บทความอธิบายกฎ",
+      "solves": "เอนจินฉันทลักษณ์ + สตูดิโอเขียน: พิมพ์กลอนแปด/กาพย์ยานี ๑๑/โคลงสี่ แล้วตัดพยางค์ ตรวจสัมผัส-เอกโท-จำนวนคำสด ไฮไลต์จุดผิดพร้อมคำอธิบาย และแนะคำสัมผัส ด้วย Thai syllable parser ที่เขียนเอง",
+      "medium": "web",
+      "tags": [
+        "thai-language",
+        "poetry",
+        "tool",
+        "web"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://klon.peerapongsm.dev/",
+      "repo": "klon",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + เลือก 3 ฉันทลักษณ์",
+          "done": true
+        },
+        {
+          "title": "PyThaiNLP build-time oracle (gold syllable set)",
+          "done": true
+        },
+        {
+          "title": "Thai syllable parser (rule-based TS)",
+          "done": true
+        },
+        {
+          "title": "ตรวจกลอนแปด",
+          "done": true
+        },
+        {
+          "title": "ตรวจกาพย์ยานี ๑๑",
+          "done": true
+        },
+        {
+          "title": "ตรวจโคลงสี่ (เอก-โท)",
+          "done": true
+        },
+        {
+          "title": "ตรวจสัมผัส + ไฮไลต์จุดผิด",
+          "done": true
+        },
+        {
+          "title": "แนะคำสัมผัส (rhyme suggest)",
+          "done": true
+        },
+        {
+          "title": "Deploy klon.peerapongsm.dev",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "ต่อกลอนสด",
+      "slug": "torklon",
+      "issue": "อยากต่อกลอนเล่นกับเพื่อนสด ๆ แต่ไม่มีที่ตรวจฉันทลักษณ์ให้อัตโนมัติ",
+      "solves": "ห้องต่อกลอนสดสูงสุด 8 คน ผลัดกันเติมวรรค เอนจิน #47 ตรวจสัมผัส + จำนวนคำแบบ real-time ก่อนรับบรรทัด เข้าห้องด้วยลิงก์เชิญ บน Supabase Realtime free tier",
+      "medium": "web",
+      "tags": [
+        "poetry",
+        "realtime",
+        "multiplayer",
+        "web"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://torklon.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/torklon",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + room model",
+          "done": true
+        },
+        {
+          "title": "Supabase Realtime schema + RLS",
+          "done": true
+        },
+        {
+          "title": "ห้อง invite + turn-based (สูงสุด 8 คน)",
+          "done": true
+        },
+        {
+          "title": "prosody gate จาก #47 (acceptance)",
+          "done": true
+        },
+        {
+          "title": "rate-limit + moderation",
+          "done": true
+        },
+        {
+          "title": "share / export กลอน",
+          "done": true
+        },
+        {
+          "title": "Deploy torklon.peerapongsm.dev",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "ระบบเลือกตั้งจำลอง",
+      "slug": "lueaktang",
+      "issue": "คำนวณที่นั่ง ส.ส. จากผลโหวตแล้วจับขั้วรัฐบาลทำมือยาก เข้าใจผิดง่าย",
+      "solves": "Sandbox เลือกตั้งไทย: กรอกที่นั่งเขต + คะแนนบัญชีรายชื่อ แล้วคำนวณจัดสรร 500 ที่นั่ง (MMM 2566) จากนั้นลองจับขั้ว เช็คใครตั้งรัฐบาล/เป็นนายกได้ config-driven ใช้ซ้ำได้ทุกเลือกตั้ง",
+      "medium": "web",
+      "tags": [
+        "civic",
+        "election",
+        "calculator",
+        "web"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://lueaktang.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/lueaktang",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + config schema (MMM 2566)",
+          "done": true
+        },
+        {
+          "title": "เอนจินจัดสรรที่นั่ง (400 เขต + 100 บัญชีรายชื่อ)",
+          "done": true
+        },
+        {
+          "title": "input ที่นั่ง/คะแนน + preload ผล 2566",
+          "done": true
+        },
+        {
+          "title": "ตัวจับขั้ว + majority 251 + PM math",
+          "done": true
+        },
+        {
+          "title": "config-driven (รองรับเปลี่ยนระบบ)",
+          "done": true
+        },
+        {
+          "title": "Deploy lueaktang.peerapongsm.dev",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "ราชการ Simulator",
+      "slug": "rachakan",
+      "issue": "ความยุ่งยากของระบบราชการไทยเล่าเป็นเรื่องตลกร้ายได้ แต่ไม่มีเกมที่ให้ลองทั้งสองฝั่งเคาน์เตอร์",
+      "solves": "เกมเสียดสีราชการไทยแนว Papers-Please: บางด่านเป็นประชาชนฝ่าเขาวงกตเอกสาร บางด่านเป็นเจ้าหน้าที่ปั๊มกฎเดียวกัน เดินกราฟ dependency เอกสาร + จัดการมิเตอร์ เวลา/เงิน/ใจ",
+      "medium": "web",
+      "tags": [
+        "game",
+        "satire",
+        "thai-culture",
+        "web"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://rachakan.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/rachakan",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + rule/meter core",
+          "done": true
+        },
+        {
+          "title": "document dependency graph",
+          "done": true
+        },
+        {
+          "title": "มิเตอร์ เวลา/เงิน/ใจ",
+          "done": true
+        },
+        {
+          "title": "ด่านประชาชน (navigate)",
+          "done": true
+        },
+        {
+          "title": "ด่านเจ้าหน้าที่ (inspect / stamp)",
+          "done": true
+        },
+        {
+          "title": "scenario ราชการจริง (บัตร ปชช./ทะเบียน/ใบขับขี่)",
+          "done": true
+        },
+        {
+          "title": "ending + star rating",
+          "done": true
+        },
+        {
+          "title": "Deploy rachakan.peerapongsm.dev",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "เดือนชนเดือน",
+      "slug": "duan-chon-duan",
+      "issue": "คนเข้าใจความจนแบบผิวเผิน ไม่รู้ว่าใช้ชีวิตเดือนชนเดือนด้วยค่าแรงไทยจริงเป็นยังไง",
+      "solves": "ลองใช้ชีวิต 1 เดือนบนงบคนรายได้น้อยไทยจริงแนว Spent: 3 ตัวละคร (แรงงานขั้นต่ำ/พ่อแม่เลี้ยงเดี่ยว/เด็กจบใหม่) 30 วัน รายรับ-รายจ่าย-เหตุการณ์บีบเลือก จบด้วยการ์ดข้อมูลจริง + แหล่งช่วยเหลือ",
+      "medium": "web",
+      "tags": [
+        "game",
+        "social",
+        "empathy",
+        "web"
+      ],
+      "track": "live",
+      "status": "done",
+      "url": "https://duan-chon-duan.peerapongsm.dev/",
+      "repo": "https://github.com/peerapongsm/duan-chon-duan",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + Thai wage/price data (cited)",
+          "done": true
+        },
+        {
+          "title": "เอนจิน 30 วัน (income/expense/meter เงิน)",
+          "done": true
+        },
+        {
+          "title": "3 ตัวละคร (แรงงาน/เลี้ยงเดี่ยว/จบใหม่)",
+          "done": true
+        },
+        {
+          "title": "เหตุการณ์บีบเลือก (dilemma)",
+          "done": true
+        },
+        {
+          "title": "การ์ดข้อมูลจริง + แหล่งช่วยเหลือ",
+          "done": true
+        },
+        {
+          "title": "Deploy duan-chon-duan.peerapongsm.dev",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "นิทรรศการ 3D",
+      "slug": "nithat",
+      "issue": "รวมผลงานทั้งปีเป็นแค่ index grid กับ dashboard ยังขาดชั้นเล่าเรื่องเชิงอารมณ์",
+      "solves": "เดินชมทั้งปีเป็นพิพิธภัณฑ์ 3D: scroll พากล้องผ่านห้องแสดงงานแต่ละโปรเจกต์ตามลำดับที่สร้าง พร้อม narrative + สถิติสด จบที่บทสะท้อน ใช้ Three.js/WebGL + 2D fallback บนมือถือ (capstone ทำท้ายสุด)",
+      "medium": "web",
+      "tags": [
+        "webgl",
+        "3d",
+        "retrospective",
+        "web"
+      ],
+      "track": "live",
+      "status": "planned",
+      "url": "",
+      "repo": "",
+      "download": "",
+      "graduated": null,
+      "phases": [
+        {
+          "title": "Brainstorm + gallery layout",
+          "done": false
+        },
+        {
+          "title": "Three.js hall + scroll-driven camera",
+          "done": false
+        },
+        {
+          "title": "exhibit ต่อโปรเจกต์ (screenshot + plaque)",
+          "done": false
+        },
+        {
+          "title": "chronological path (#1 → #52)",
+          "done": false
+        },
+        {
+          "title": "live stats จาก armory-analytics + baked fallback",
+          "done": false
+        },
+        {
+          "title": "2D scrollytelling fallback (mobile / no-WebGL)",
+          "done": false
+        },
+        {
+          "title": "narrative beats + reflection ending",
+          "done": false
+        },
+        {
+          "title": "Deploy nithat.peerapongsm.dev",
+          "done": false
+        }
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "id": 1,
+      "name": "The Armory",
+      "kind": "web",
+      "web": {
+        "visitors": 1443,
+        "pageviews": 1939,
+        "bounceRate": 0.8373143963847643,
+        "avgVisitSeconds": 27.145900581020012,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 49,
+      "graduate": false
+    },
+    {
+      "id": 5,
+      "name": "คลายหนี้",
+      "kind": "web",
+      "web": {
+        "visitors": 264,
+        "pageviews": 284,
+        "bounceRate": 0.9661654135338346,
+        "avgVisitSeconds": 5.447368421052632,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 34,
+      "graduate": false
+    },
+    {
+      "id": 4,
+      "name": "กล่องพักใจ",
+      "kind": "web",
+      "web": {
+        "visitors": 247,
+        "pageviews": 265,
+        "bounceRate": 0.9556451612903226,
+        "avgVisitSeconds": 4.713709677419355,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 34,
+      "graduate": false
+    },
+    {
+      "id": 43,
+      "name": "เติมบุญ",
+      "kind": "web",
+      "web": {
+        "visitors": 188,
+        "pageviews": 244,
+        "bounceRate": 0.8557213930348259,
+        "avgVisitSeconds": 76.02487562189054,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 44,
+      "graduate": false
+    },
+    {
+      "id": 3,
+      "name": "Yai-Aree",
+      "kind": "web",
+      "web": {
+        "visitors": 184,
+        "pageviews": 221,
+        "bounceRate": 0.8983957219251337,
+        "avgVisitSeconds": 20.06417112299465,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 35,
+      "graduate": false
+    },
+    {
+      "id": 8,
+      "name": "หาบริการรัฐใกล้ฉัน",
+      "kind": "web",
+      "web": {
+        "visitors": 121,
+        "pageviews": 191,
+        "bounceRate": 0.6475409836065574,
+        "avgVisitSeconds": 6.975409836065574,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 33,
+      "graduate": false
+    },
+    {
+      "id": 37,
+      "name": "Two-Person Pixel Canvas",
+      "kind": "web",
+      "web": {
+        "visitors": 116,
+        "pageviews": 134,
+        "bounceRate": 0.9166666666666666,
+        "avgVisitSeconds": 3.158333333333333,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 29,
+      "graduate": false
+    },
+    {
+      "id": 11,
+      "name": "DuckDuckWash",
+      "kind": "desktop",
+      "web": null,
+      "downloads": 95,
+      "score": 50,
+      "graduate": false
+    },
+    {
+      "id": 16,
+      "name": "สายโจรจำลอง",
+      "kind": "web",
+      "web": {
+        "visitors": 88,
+        "pageviews": 117,
+        "bounceRate": 0.8863636363636364,
+        "avgVisitSeconds": 11.715909090909092,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 29,
+      "graduate": false
+    },
+    {
+      "id": 25,
+      "name": "ลายไทย Generator",
+      "kind": "web",
+      "web": {
+        "visitors": 82,
+        "pageviews": 398,
+        "bounceRate": 0.0975609756097561,
+        "avgVisitSeconds": 1.6585365853658536,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 37,
+      "graduate": false
+    },
+    {
+      "id": 7,
+      "name": "set-is-dead",
+      "kind": "web",
+      "web": {
+        "visitors": 81,
+        "pageviews": 88,
+        "bounceRate": 0.9382716049382716,
+        "avgVisitSeconds": 5,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 27,
+      "graduate": false
+    },
+    {
+      "id": 12,
+      "name": "DuckDuckPlan",
+      "kind": "web",
+      "web": {
+        "visitors": 81,
+        "pageviews": 94,
+        "bounceRate": 0.8795180722891566,
+        "avgVisitSeconds": 3.5421686746987953,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 28,
+      "graduate": false
+    },
+    {
+      "id": 6,
+      "name": "GPP Floor Check",
+      "kind": "web",
+      "web": {
+        "visitors": 69,
+        "pageviews": 73,
+        "bounceRate": 0.9571428571428572,
+        "avgVisitSeconds": 6.7,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 26,
+      "graduate": false
+    },
+    {
+      "id": 2,
+      "name": "Armory Analytics",
+      "kind": "web",
+      "web": {
+        "visitors": 68,
+        "pageviews": 79,
+        "bounceRate": 0.9315068493150684,
+        "avgVisitSeconds": 1.547945205479452,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 26,
+      "graduate": false
+    },
+    {
+      "id": 22,
+      "name": "ทายจังหวัดวันละครั้ง",
+      "kind": "web",
+      "web": {
+        "visitors": 66,
+        "pageviews": 187,
+        "bounceRate": 0.4852941176470588,
+        "avgVisitSeconds": 124.67647058823529,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 49,
+      "graduate": false
+    },
+    {
+      "id": 28,
+      "name": "CSS ตลาดสด",
+      "kind": "web",
+      "web": {
+        "visitors": 37,
+        "pageviews": 46,
+        "bounceRate": 0.8648648648648649,
+        "avgVisitSeconds": 3.891891891891892,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 24,
+      "graduate": false
+    },
+    {
+      "id": 48,
+      "name": "ต่อกลอนสด",
+      "kind": "web",
+      "web": {
+        "visitors": 36,
+        "pageviews": 43,
+        "bounceRate": 0.9512195121951219,
+        "avgVisitSeconds": 3.2195121951219514,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 22,
+      "graduate": false
+    },
+    {
+      "id": 18,
+      "name": "หวยจำลอง",
+      "kind": "web",
+      "web": {
+        "visitors": 34,
+        "pageviews": 54,
+        "bounceRate": 0.7222222222222222,
+        "avgVisitSeconds": 89.38888888888889,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 38,
+      "graduate": false
+    },
+    {
+      "id": 44,
+      "name": "เรียนรู้ Claude Architect",
+      "kind": "web",
+      "web": {
+        "visitors": 33,
+        "pageviews": 75,
+        "bounceRate": 0.7142857142857143,
+        "avgVisitSeconds": 6.514285714285714,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 25,
+      "graduate": false
+    },
+    {
+      "id": 10,
+      "name": "เพื่อนคู่ร้าน",
+      "kind": "web",
+      "web": {
+        "visitors": 32,
+        "pageviews": 33,
+        "bounceRate": 0.96875,
+        "avgVisitSeconds": 3.28125,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 21,
+      "graduate": false
+    },
+    {
+      "id": 13,
+      "name": "PromptFiled",
+      "kind": "web",
+      "web": {
+        "visitors": 31,
+        "pageviews": 71,
+        "bounceRate": 0.2903225806451613,
+        "avgVisitSeconds": 27.774193548387096,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 33,
+      "graduate": false
+    },
+    {
+      "id": 23,
+      "name": "Traffic God",
+      "kind": "web",
+      "web": {
+        "visitors": 31,
+        "pageviews": 88,
+        "bounceRate": 0.5161290322580645,
+        "avgVisitSeconds": 60.38709677419355,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 35,
+      "graduate": false
+    },
+    {
+      "id": 20,
+      "name": "เกมปุ่มเดียว",
+      "kind": "web",
+      "web": {
+        "visitors": 28,
+        "pageviews": 132,
+        "bounceRate": 0.41379310344827586,
+        "avgVisitSeconds": 26.24137931034483,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 31,
+      "graduate": false
+    },
+    {
+      "id": 29,
+      "name": "ฟอนต์ลายมือคุณ",
+      "kind": "web",
+      "web": {
+        "visitors": 27,
+        "pageviews": 28,
+        "bounceRate": 0.9629629629629629,
+        "avgVisitSeconds": 5.814814814814815,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 21,
+      "graduate": false
+    },
+    {
+      "id": 27,
+      "name": "ชีวิตเป็นสัปดาห์",
+      "kind": "web",
+      "web": {
+        "visitors": 26,
+        "pageviews": 37,
+        "bounceRate": 0.8571428571428571,
+        "avgVisitSeconds": 22.678571428571427,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 24,
+      "graduate": false
+    },
+    {
+      "id": 19,
+      "name": "หมาแมวจร",
+      "kind": "web",
+      "web": {
+        "visitors": 25,
+        "pageviews": 27,
+        "bounceRate": 0.9615384615384616,
+        "avgVisitSeconds": 0.6538461538461539,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 20,
+      "graduate": false
+    },
+    {
+      "id": 26,
+      "name": "เสียงฝนเมืองไทย",
+      "kind": "web",
+      "web": {
+        "visitors": 24,
+        "pageviews": 33,
+        "bounceRate": 0.84,
+        "avgVisitSeconds": 23.4,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 24,
+      "graduate": false
+    },
+    {
+      "id": 21,
+      "name": "หมากรุกไทยออนไลน์",
+      "kind": "web",
+      "web": {
+        "visitors": 23,
+        "pageviews": 27,
+        "bounceRate": 0.9583333333333334,
+        "avgVisitSeconds": 1.875,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 19,
+      "graduate": false
+    },
+    {
+      "id": 42,
+      "name": "Desk Rain",
+      "kind": "web",
+      "web": {
+        "visitors": 23,
+        "pageviews": 35,
+        "bounceRate": 0.8333333333333334,
+        "avgVisitSeconds": 29.875,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 25,
+      "graduate": false
+    },
+    {
+      "id": 38,
+      "name": "สารภาพกับความว่างเปล่า",
+      "kind": "web",
+      "web": {
+        "visitors": 22,
+        "pageviews": 36,
+        "bounceRate": 0.76,
+        "avgVisitSeconds": 76.72,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 33,
+      "graduate": false
+    },
+    {
+      "id": 32,
+      "name": "Whistle to Search",
+      "kind": "web",
+      "web": {
+        "visitors": 21,
+        "pageviews": 23,
+        "bounceRate": 0.9047619047619048,
+        "avgVisitSeconds": 5.857142857142857,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 20,
+      "graduate": false
+    },
+    {
+      "id": 24,
+      "name": "พิมพ์ไล่ผี",
+      "kind": "web",
+      "web": {
+        "visitors": 20,
+        "pageviews": 23,
+        "bounceRate": 0.9047619047619048,
+        "avgVisitSeconds": 20.047619047619047,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 22,
+      "graduate": false
+    },
+    {
+      "id": 33,
+      "name": "แดดบอกเวลา",
+      "kind": "web",
+      "web": {
+        "visitors": 20,
+        "pageviews": 24,
+        "bounceRate": 0.8,
+        "avgVisitSeconds": 3.15,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 21,
+      "graduate": false
+    },
+    {
+      "id": 36,
+      "name": "หน้าเว็บปี 2004",
+      "kind": "web",
+      "web": {
+        "visitors": 20,
+        "pageviews": 31,
+        "bounceRate": 0.7619047619047619,
+        "avgVisitSeconds": 40.76190476190476,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 27,
+      "graduate": false
+    },
+    {
+      "id": 39,
+      "name": "QR Code ทำงานยังไง",
+      "kind": "web",
+      "web": {
+        "visitors": 19,
+        "pageviews": 19,
+        "bounceRate": 1,
+        "avgVisitSeconds": 0,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 18,
+      "graduate": false
+    },
+    {
+      "id": 51,
+      "name": "เดือนชนเดือน",
+      "kind": "web",
+      "web": {
+        "visitors": 19,
+        "pageviews": 29,
+        "bounceRate": 0.8260869565217391,
+        "avgVisitSeconds": 21.73913043478261,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 23,
+      "graduate": false
+    },
+    {
+      "id": 15,
+      "name": "RunClub Social",
+      "kind": "web",
+      "web": {
+        "visitors": 18,
+        "pageviews": 20,
+        "bounceRate": 1,
+        "avgVisitSeconds": 0,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 17,
+      "graduate": false
+    },
+    {
+      "id": 35,
+      "name": "เว็บที่ช้าที่สุดในประเทศไทย",
+      "kind": "web",
+      "web": {
+        "visitors": 17,
+        "pageviews": 40,
+        "bounceRate": 0.6111111111111112,
+        "avgVisitSeconds": 11.222222222222221,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 23,
+      "graduate": false
+    },
+    {
+      "id": 46,
+      "name": "เซียมซี",
+      "kind": "web",
+      "web": {
+        "visitors": 17,
+        "pageviews": 20,
+        "bounceRate": 0.8235294117647058,
+        "avgVisitSeconds": 14.588235294117647,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 21,
+      "graduate": false
+    },
+    {
+      "id": 30,
+      "name": "if — ถ้า",
+      "kind": "web",
+      "web": {
+        "visitors": 14,
+        "pageviews": 37,
+        "bounceRate": 0.7333333333333333,
+        "avgVisitSeconds": 257.46666666666664,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 37,
+      "graduate": false
+    },
+    {
+      "id": 47,
+      "name": "เอนจินโคลงกลอน",
+      "kind": "web",
+      "web": {
+        "visitors": 14,
+        "pageviews": 14,
+        "bounceRate": 1,
+        "avgVisitSeconds": 0,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 16,
+      "graduate": false
+    },
+    {
+      "id": 41,
+      "name": "0.1 + 0.2 ≠ 0.3",
+      "kind": "web",
+      "web": {
+        "visitors": 13,
+        "pageviews": 13,
+        "bounceRate": 1,
+        "avgVisitSeconds": 0,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 15,
+      "graduate": false
+    },
+    {
+      "id": 45,
+      "name": "โฆษณานรก",
+      "kind": "web",
+      "web": {
+        "visitors": 12,
+        "pageviews": 30,
+        "bounceRate": 0.7058823529411765,
+        "avgVisitSeconds": 234.76470588235293,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 37,
+      "graduate": false
+    },
+    {
+      "id": 40,
+      "name": "สอนคอมให้เดา",
+      "kind": "web",
+      "web": {
+        "visitors": 11,
+        "pageviews": 12,
+        "bounceRate": 0.9090909090909091,
+        "avgVisitSeconds": 8.818181818181818,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 17,
+      "graduate": false
+    },
+    {
+      "id": 49,
+      "name": "ระบบเลือกตั้งจำลอง",
+      "kind": "web",
+      "web": {
+        "visitors": 11,
+        "pageviews": 15,
+        "bounceRate": 0.8333333333333334,
+        "avgVisitSeconds": 24.833333333333332,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 20,
+      "graduate": false
+    },
+    {
+      "id": 34,
+      "name": "Plant Cam Timelapse",
+      "kind": "web",
+      "web": {
+        "visitors": 9,
+        "pageviews": 9,
+        "bounceRate": 1,
+        "avgVisitSeconds": 0,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 14,
+      "graduate": false
+    },
+    {
+      "id": 31,
+      "name": "เพลงจากเส้นทางของคุณ",
+      "kind": "web",
+      "web": {
+        "visitors": 8,
+        "pageviews": 8,
+        "bounceRate": 1,
+        "avgVisitSeconds": 0,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 13,
+      "graduate": false
+    },
+    {
+      "id": 50,
+      "name": "ราชการ Simulator",
+      "kind": "web",
+      "web": {
+        "visitors": 8,
+        "pageviews": 14,
+        "bounceRate": 0.8,
+        "avgVisitSeconds": 45.7,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 22,
+      "graduate": false
+    },
+    {
+      "id": 9,
+      "name": "เพื่อนเกษตร",
+      "kind": "desktop",
+      "web": null,
+      "downloads": 1,
+      "score": 8,
+      "graduate": false
+    },
+    {
+      "id": 17,
+      "name": "หนี้ครัวเรือนสด",
+      "kind": "web",
+      "web": {
+        "visitors": 0,
+        "pageviews": 0,
+        "bounceRate": 1,
+        "avgVisitSeconds": 0,
+        "returningRatio": 0
+      },
+      "downloads": null,
+      "score": 0,
+      "graduate": false
+    }
+  ]
+}
