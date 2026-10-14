@@ -2,7 +2,7 @@ import type { Exhibit, StatsSource } from "../types";
 import snapshot from "../data/stats-snapshot.json";
 import shotSlugs from "../data/shots.json";
 
-const PROJECTS_URL = "https://peerapongsm.dev/projects.json";
+const PROJECTS_URL = "https://armory.peerapongsm.dev/projects.json";
 const SUMMARY_URL = "https://armory-analytics-peerapongsms-projects.vercel.app/api/summary";
 const FETCH_TIMEOUT_MS = 6000;
 
